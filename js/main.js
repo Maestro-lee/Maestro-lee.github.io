@@ -1,1 +1,0 @@
-document.createElement("a").innerText = "Clcik me!";
