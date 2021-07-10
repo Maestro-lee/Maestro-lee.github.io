@@ -8,6 +8,7 @@ body{
     justify-content: center;
     align-items: center;
     height: 100vh;
+    text-transform: uppercase;
 }
 
 /* CLOCK */
@@ -66,7 +67,7 @@ h2#clock{
 /* QUOTES */
 .quotes{
     display: flex;
-    position: absolute;
+    position: relative;
     bottom: 0;
     margin-bottom: 50px;
     font-size: 22px;
