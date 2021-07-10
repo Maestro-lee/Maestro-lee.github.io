@@ -33,5 +33,5 @@ const quote = document.querySelector(".quote");
 const author = document.querySelector(".author");
 
 const ranNum = Math.floor(Math.random() * quotes.length);
-quote.innerText = quotes[ranNum].quote;
-author.innerText = quotes[ranNum].author;
+quote.innerText = `"${quotes[ranNum].quote}"`;
+author.innerText = `  ${quotes[ranNum].author}`;

@@ -5,18 +5,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- TITLE AND FAVICON -->
+    <title>ToDo Things</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
+<!-- <body style="background : url(img/0.jpg) no-repeat; background-size: cover;"> -->
     <h2 id="clock">00:00</h2>
     <h1 class="greeting hidden"></h1>
     <form id="login-form" class="hidden">
         <input required maxlength="15" type="text" placeholder="what is your name?">
         <input type="submit" value="Log in">
     </form>
-    <form id="todo-form" action="">
+    <form id="todo-form" class="hidden" action="">
+        <h2></h2>
         <input type="text" required placeholder="Write to do and Press Enter">  
     </form>
     <ul id="todo-list">

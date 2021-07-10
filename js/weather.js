@@ -16,4 +16,4 @@ function posErr(){
     alert("can't find");
 }
 
-navigator.geolocation.getCurrentPosition(posOk, posErr);
+// navigator.geolocation.getCurrentPosition(posOk, posErr);

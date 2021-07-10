@@ -1,6 +1,82 @@
-body{
-    background: burlywood;
-}
 .hidden{
     display: none;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h2#clock{
+    font-size: 150px;
+    color: rgb(255, 255, 255);
+}
+.greeting{
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+#login-form input:first-child{
+    all: unset;
+    text-decoration: underline;
+    font-size: 70px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#login-form input:nth-child(2){
+    display: none;
+}
+
+#todo-form{
+    margin-top: 50px;
+    width: 500px;
+    text-align: center;
+}
+#todo-form h2{
+    color: white;
+    font-size: 30px;
+}
+#todo-form input{
+    all: unset;
+    text-decoration: underline;
+    color: white;
+    font-size: 30px;
+    width: 100%;
+}
+#todo-list li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100px;
+}
+
+#todo-list span{
+    color: white;
+    font-size: 20px;
+}
+
+.quotes{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 50px;
+    font-size: 22px;
+    color: white;
+    align-items: flex-end;
+}
+.quotes .author{
+    margin-left: 10px;
+    font-size: 16px;
+}
+#weather{
+    position: absolute;
+    top:0;
+    right:0;
+    padding: 30px;
+    color: white;
+    font-size: 20px;
 }

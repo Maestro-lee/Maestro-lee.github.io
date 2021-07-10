@@ -5,6 +5,7 @@ const toDoList = document.querySelector("#todo-list");
 const TODOS_KEY = "toDos";
 
 let toDos = [];
+handleTodoSave();
 
 function saveToDos(){
     localStorage.setItem(TODOS_KEY,JSON.stringify(toDos));
@@ -16,6 +17,7 @@ function deleteToDo(event){
     console.log(li.id);
     toDos = toDos.filter(todo => todo.id !==parseInt(li.id));
     saveToDos();
+    handleTodoSave();
 }
 
 function paintToDO(newToDo){
@@ -29,6 +31,7 @@ function paintToDO(newToDo){
     li.appendChild(span);
     li.appendChild(button);
     toDoList.appendChild(li);
+    handleTodoSave();
 }
 
 function handleToDoSubmit(event){
@@ -52,4 +55,13 @@ if(savedToDos !== null){
     const parsedToDos = JSON.parse(savedToDos);
     toDos = parsedToDos;
     parsedToDos.forEach(paintToDO);
+}
+
+function handleTodoSave(){
+    if(toDos.length !==0){
+        document.querySelector("#todo-form h2").innerText = "Todo";
+    }
+    else{
+        document.querySelector("#todo-form h2").innerText = "What will you do today?";
+    }
 }
