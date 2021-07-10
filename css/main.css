@@ -10,15 +10,18 @@ body{
     height: 100vh;
 }
 
-
+/* CLOCK */
 h2#clock{
     font-size: 150px;
     color: rgb(255, 255, 255);
 }
+
+/* GREETING */
 .greeting{
     font-size: 70px;
     color: rgb(255, 255, 255);
 }
+
 #login-form input:first-child{
     all: unset;
     text-decoration: underline;
@@ -31,6 +34,7 @@ h2#clock{
     display: none;
 }
 
+/* TODO FORM */
 #todo-form{
     margin-top: 50px;
     width: 500px;
@@ -59,6 +63,7 @@ h2#clock{
     font-size: 20px;
 }
 
+/* QUOTES */
 .quotes{
     display: flex;
     position: absolute;
@@ -72,6 +77,8 @@ h2#clock{
     margin-left: 10px;
     font-size: 16px;
 }
+
+/* WEATHER */
 #weather{
     position: absolute;
     top:0;
